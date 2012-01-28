@@ -1,0 +1,54 @@
+﻿/*! @mainpage API Reference
+ *
+ * @image html "splash.png"
+ *
+ * @section intro Введение
+ * <a href="http://www.toponic.ru">Toponic</a> - программа для уравнивания геодезических сетей в локальной системе координат.
+ * Это объектно-ориентированное кросс-платформенное GUI приложение для
+ * <a href="http://www.gnu.org/software/gama/gama.html">GNU GaMa</a>. Проект написан на C++ с использованием
+ * кросс-платформенной библиотеки <a href="http://qt.nokia.com/products/">Qt 4</a> и поддерживает все возможности,
+ * предоставленные <a href="http://www.gnu.org/software/gama/gama.html">GNU GaMa</a>.
+ * При этом пользователю нет необходимости изучать XML или GaMa DTD. Это является основной причиной, по которой начат
+ * проект <a href="http://www.toponic.ru">Toponic</a>.
+ * 
+ * @section build Компиляция проекта
+ * Для компиляции проекта надо иметь нормально заточеные руки и все.
+ *
+ * @section used_products При создании программы были использованы следующие программные продукты и библиотеки:
+ * <ul>
+ *     <li><a href="http://qt.nokia.com/products/">Qt v 4.8.0 by Nokia Corporation</a></li> a cross-platform application and UI framework;
+ *     <li><a href="http://qt.nokia.com/products/">Qt Creator 2.4.0 by Nokia Corporation</a> an open development platform;</li>
+ *     <li><a href="http://www.gnu.org/software/gama/gama.html">GNU GaMa v 1.9.6</a></li> a project dedicated to adjustment of geodetic networks;
+ *     <li><a href="http://expat.sourceforge.net/">Expat v 1.1</a> an XML parser library written in C (included in GNU Gama);</li>
+ *     <li><a href="http://www.mingw.org/">MinGW v 5.1.4</a> a port of the GNU Compiler Collection (GCC), and GNU Binutils;</li>
+ *     <li><a href="http://www.doxygen.org/">Doxygen v 1.7.5</a> a documentation system for C++, C, Java, Objective-C, Python, IDL (Corba and Microsoft flavors), Fortran, VHDL, PHP, C#, and to some extent D;</li>
+ *     <li><a href="http://www.gimp.org/">GIMP v 2.6.7</a> the GNU Image Manipulation Program.</li>
+ * </ul>
+ *
+ * @section contacts Связь с разработчиками
+ * По всем вопросам, идеям, предложениям и отчетам об ошибках обращайтесь
+ * <a href="mailto:bug-toponic@yandex.ru">bug-toponic@yandex.ru</a>
+ * При отправке отчета об ошибках, пожалуйста предоставляйте максимальное количество информации. Это поможет нам
+ * понять, что конкретно произошло и воспроизвести ошибку на своих машинах. Помните, что излишек информации лучше
+ * ее отсутсвия.
+ *
+ */
+
+/*!
+ * @defgroup toponic Toponic
+ * @defgroup gui GUI
+ * @defgroup graphics Graphics
+ */
+
+ /*! \addtogroup toponic
+ * Модуль содержит классы, осуществляющие внутреннюю организацию приложения.
+ */
+
+ /*! \addtogroup gui
+ * Модуль содержит GUI-классы, отвечающие за внешний вид приложения.
+ */
+
+ /*! \addtogroup graphics
+ * Модуль содержит классы, отвечающие за отбражение графической информации.
+ * Так же сюда входят классы для импорта\экспорта файлов различных растровых и векторных форматов.
+ */

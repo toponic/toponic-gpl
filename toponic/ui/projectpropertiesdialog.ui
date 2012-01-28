@@ -1,0 +1,1760 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ProjectPropertiesDialog</class>
+ <widget class="QDialog" name="ProjectPropertiesDialog">
+  <property name="windowModality">
+   <enum>Qt::WindowModal</enum>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>448</width>
+    <height>567</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Project properties</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="../res/toponic.qrc">
+    <normaloff>:/png/toponic-48.png</normaloff>:/png/toponic-48.png</iconset>
+  </property>
+  <property name="modal">
+   <bool>true</bool>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout_2">
+   <item>
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <property name="spacing">
+      <number>0</number>
+     </property>
+     <item>
+      <widget class="QTabWidget" name="tabWidget">
+       <property name="currentIndex">
+        <number>0</number>
+       </property>
+       <widget class="QWidget" name="objectCardTab">
+        <attribute name="title">
+         <string>Objet Card</string>
+        </attribute>
+        <layout class="QVBoxLayout" name="verticalLayout_4">
+         <item>
+          <widget class="QLabel" name="projectNameLabel">
+           <property name="text">
+            <string>Project name:</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="projectNameLineEdit"/>
+         </item>
+         <item>
+          <widget class="QLabel" name="localityLabel">
+           <property name="text">
+            <string>Locality:</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="localityLineEdit"/>
+         </item>
+         <item>
+          <widget class="QLabel" name="siteLabel">
+           <property name="text">
+            <string>Site:</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="siteLineEdit"/>
+         </item>
+         <item>
+          <widget class="QLabel" name="securityLabel">
+           <property name="text">
+            <string>Security:</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="securityLineEdit"/>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout">
+           <item>
+            <widget class="QLabel" name="surveyScaleLabel">
+             <property name="text">
+              <string>Survey scale:</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QComboBox" name="surveyScaleComboBox">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="currentIndex">
+              <number>6</number>
+             </property>
+             <property name="frame">
+              <bool>true</bool>
+             </property>
+             <item>
+              <property name="text">
+               <string>1:10</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>1:20</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>1:50</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>1:100</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>1:200</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>1:500</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>1:1000</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>1:2000</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>1:5000</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>1:10000</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>1:25000</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>1:50000</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>1:100000</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>1:250000</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>1:500000</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>1:1000000</string>
+              </property>
+             </item>
+            </widget>
+           </item>
+           <item>
+            <spacer name="horizontalSpacer">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>40</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <widget class="QFrame" name="frame">
+           <property name="frameShape">
+            <enum>QFrame::HLine</enum>
+           </property>
+           <property name="frameShadow">
+            <enum>QFrame::Raised</enum>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QCheckBox" name="defaultTablesCheckBox">
+           <property name="text">
+            <string>Apply to table setup project default</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <spacer name="verticalSpacer">
+           <property name="orientation">
+            <enum>Qt::Vertical</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>20</width>
+             <height>289</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QWidget" name="coordinatesTab">
+        <attribute name="title">
+         <string>Coordinates</string>
+        </attribute>
+        <layout class="QVBoxLayout" name="verticalLayout_3">
+         <item>
+          <layout class="QGridLayout" name="gridLayout_2">
+           <item row="0" column="0">
+            <widget class="QLabel" name="NPresentationLabel">
+             <property name="text">
+              <string>N-coordinate presentation:</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="1">
+            <widget class="QLabel" name="EPresentationLabel">
+             <property name="text">
+              <string>E-coordinate presentation:</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="0">
+            <widget class="QComboBox" name="NPresentationComboBox">
+             <property name="enabled">
+              <bool>false</bool>
+             </property>
+             <item>
+              <property name="text">
+               <string>N</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>N-No</string>
+              </property>
+             </item>
+            </widget>
+           </item>
+           <item row="1" column="1">
+            <widget class="QComboBox" name="EPresentationComboBox">
+             <property name="enabled">
+              <bool>false</bool>
+             </property>
+             <item>
+              <property name="text">
+               <string>E</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>E+Eo</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>&lt;zone&gt;E+Eo</string>
+              </property>
+             </item>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <widget class="QGroupBox" name="coordinatesGroupBox">
+           <property name="title">
+            <string>Coordinates</string>
+           </property>
+           <layout class="QHBoxLayout" name="horizontalLayout_2">
+            <item>
+             <widget class="QComboBox" name="coordinatesComboBox">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="minimumSize">
+               <size>
+                <width>200</width>
+                <height>0</height>
+               </size>
+              </property>
+              <item>
+               <property name="text">
+                <string>local</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Gauss (z-6)</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Gauss (z-7)</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Gauss (z-8)</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Gauss (z-9)</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Gauss (z-10)</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Gauss (z-11)</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Gauss (z-12)</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Gauss (z-13)</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Gauss (z-14)</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Gauss (z-15)</string>
+               </property>
+              </item>
+             </widget>
+            </item>
+            <item>
+             <spacer name="horizontalSpacer_2">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>124</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item>
+             <widget class="QPushButton" name="setupCoordinatesPushButton">
+              <property name="text">
+               <string>Setup</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+         <item>
+          <widget class="QGroupBox" name="MSLGroupBox">
+           <property name="title">
+            <string>MSL system</string>
+           </property>
+           <layout class="QHBoxLayout" name="horizontalLayout_3">
+            <item>
+             <widget class="QComboBox" name="MSLComboBox">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="minimumSize">
+               <size>
+                <width>200</width>
+                <height>0</height>
+               </size>
+              </property>
+              <item>
+               <property name="text">
+                <string>Baltic</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>local</string>
+               </property>
+              </item>
+             </widget>
+            </item>
+            <item>
+             <spacer name="horizontalSpacer_3">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>49</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item>
+             <widget class="QPushButton" name="setupMSLPushButton">
+              <property name="text">
+               <string>Setup</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+         <item>
+          <spacer name="verticalSpacer_2">
+           <property name="orientation">
+            <enum>Qt::Vertical</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>20</width>
+             <height>286</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QWidget" name="accuracyTab">
+        <attribute name="title">
+         <string>Accuracy</string>
+        </attribute>
+        <layout class="QVBoxLayout" name="verticalLayout_6">
+         <item>
+          <widget class="QLabel" name="horizontalMSELabel">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="text">
+            <string>MSE of horizontal measurements:</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QTableWidget" name="horizontalMSETableWidget">
+           <property name="alternatingRowColors">
+            <bool>false</bool>
+           </property>
+           <property name="selectionMode">
+            <enum>QAbstractItemView::SingleSelection</enum>
+           </property>
+           <property name="wordWrap">
+            <bool>true</bool>
+           </property>
+           <property name="cornerButtonEnabled">
+            <bool>false</bool>
+           </property>
+           <row>
+            <property name="text">
+             <string>Angles</string>
+            </property>
+           </row>
+           <row>
+            <property name="text">
+             <string>Directions</string>
+            </property>
+           </row>
+           <row>
+            <property name="text">
+             <string>Grid azimuths</string>
+            </property>
+           </row>
+           <row>
+            <property name="text">
+             <string>Distance (EDMI) without ppm</string>
+            </property>
+           </row>
+           <row>
+            <property name="text">
+             <string>Distance (tape)</string>
+            </property>
+           </row>
+           <column>
+            <property name="text">
+             <string>1-class</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>2-class</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>3-class</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>4-class</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>1-category</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>2-category</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>theod. travers</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>tacheom. travers</string>
+            </property>
+           </column>
+           <item row="0" column="0">
+            <property name="text">
+             <string> 0,7</string>
+            </property>
+           </item>
+           <item row="0" column="1">
+            <property name="text">
+             <string> 1,0</string>
+            </property>
+           </item>
+           <item row="0" column="2">
+            <property name="text">
+             <string> 1,5</string>
+            </property>
+           </item>
+           <item row="0" column="3">
+            <property name="text">
+             <string> 2,0</string>
+            </property>
+           </item>
+           <item row="0" column="4">
+            <property name="text">
+             <string> 5,0</string>
+            </property>
+           </item>
+           <item row="0" column="5">
+            <property name="text">
+             <string> 10,0</string>
+            </property>
+           </item>
+           <item row="0" column="6">
+            <property name="text">
+             <string> 20,0</string>
+            </property>
+           </item>
+           <item row="0" column="7">
+            <property name="text">
+             <string> 90,0</string>
+            </property>
+           </item>
+           <item row="1" column="0">
+            <property name="text">
+             <string> 0,5</string>
+            </property>
+           </item>
+           <item row="1" column="1">
+            <property name="text">
+             <string> 0,7</string>
+            </property>
+           </item>
+           <item row="1" column="2">
+            <property name="text">
+             <string> 1,1</string>
+            </property>
+           </item>
+           <item row="1" column="3">
+            <property name="text">
+             <string> 1,4</string>
+            </property>
+           </item>
+           <item row="1" column="4">
+            <property name="text">
+             <string> 3,5</string>
+            </property>
+           </item>
+           <item row="1" column="5">
+            <property name="text">
+             <string> 7,1</string>
+            </property>
+           </item>
+           <item row="1" column="6">
+            <property name="text">
+             <string> 14,1</string>
+            </property>
+           </item>
+           <item row="1" column="7">
+            <property name="text">
+             <string> 63,6</string>
+            </property>
+           </item>
+           <item row="2" column="0">
+            <property name="text">
+             <string> 0,5</string>
+            </property>
+           </item>
+           <item row="2" column="1">
+            <property name="text">
+             <string> 0,5</string>
+            </property>
+           </item>
+           <item row="2" column="2">
+            <property name="text">
+             <string> 0,7</string>
+            </property>
+           </item>
+           <item row="2" column="3">
+            <property name="text">
+             <string> 1,0</string>
+            </property>
+           </item>
+           <item row="2" column="4">
+            <property name="text">
+             <string> 1,5</string>
+            </property>
+           </item>
+           <item row="2" column="5">
+            <property name="text">
+             <string> 3,5</string>
+            </property>
+           </item>
+           <item row="2" column="6">
+            <property name="text">
+             <string> 7,0</string>
+            </property>
+           </item>
+           <item row="2" column="7">
+            <property name="text">
+             <string> 30,0</string>
+            </property>
+           </item>
+           <item row="3" column="0">
+            <property name="text">
+             <string>0,0200</string>
+            </property>
+           </item>
+           <item row="3" column="1">
+            <property name="text">
+             <string>0,0200</string>
+            </property>
+           </item>
+           <item row="3" column="2">
+            <property name="text">
+             <string>0,0200</string>
+            </property>
+           </item>
+           <item row="3" column="3">
+            <property name="text">
+             <string>0,0200</string>
+            </property>
+           </item>
+           <item row="3" column="4">
+            <property name="text">
+             <string>0,0200</string>
+            </property>
+           </item>
+           <item row="3" column="5">
+            <property name="text">
+             <string>0,0200</string>
+            </property>
+           </item>
+           <item row="3" column="6">
+            <property name="text">
+             <string>0,0250</string>
+            </property>
+           </item>
+           <item row="3" column="7">
+            <property name="text">
+             <string>0,1000</string>
+            </property>
+           </item>
+           <item row="4" column="0">
+            <property name="text">
+             <string> 300000</string>
+            </property>
+           </item>
+           <item row="4" column="1">
+            <property name="text">
+             <string> 200000</string>
+            </property>
+           </item>
+           <item row="4" column="2">
+            <property name="text">
+             <string> 150000</string>
+            </property>
+           </item>
+           <item row="4" column="3">
+            <property name="text">
+             <string>70000</string>
+            </property>
+           </item>
+           <item row="4" column="4">
+            <property name="text">
+             <string> 50000</string>
+            </property>
+           </item>
+           <item row="4" column="5">
+            <property name="text">
+             <string>20000</string>
+            </property>
+           </item>
+           <item row="4" column="6">
+            <property name="text">
+             <string> 5000</string>
+            </property>
+           </item>
+           <item row="4" column="7">
+            <property name="text">
+             <string> 2000</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_4">
+           <item>
+            <widget class="QLabel" name="ConfidentialCoefficientLabel">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="text">
+              <string>Confidental coefficient:</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QComboBox" name="comboBox">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="currentIndex">
+              <number>7</number>
+             </property>
+             <item>
+              <property name="text">
+               <string>0,2   15.852%</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>0,5   38.292%</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>1,0   68.269%</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>1,2   76.986%</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>1,4   83.849%</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>1,6   89.040%</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>1,8   92.814%</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>2,0   95.450%</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>2,1   96.427%</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>2,2   97.219%</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>2,3   97.855%</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>2,4   98.360%</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>2,5   98.758%</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>2,6   99.068%</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>2,7   99.037%</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>2,8   99.489%</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>2,9   99.627%</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>3,0   99.730%</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>4,0   99.994%</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>5,0   99.999%</string>
+              </property>
+             </item>
+            </widget>
+           </item>
+           <item>
+            <spacer name="horizontalSpacer_4">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>40</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <widget class="QLabel" name="altitudeDisrepancyLabel">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="text">
+            <string>Admissible altitude discrepancy:</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QTableWidget" name="altitudeDisrepancyTableWidget">
+           <property name="iconSize">
+            <size>
+             <width>0</width>
+             <height>0</height>
+            </size>
+           </property>
+           <row>
+            <property name="text">
+             <string>[m]√L</string>
+            </property>
+           </row>
+           <row>
+            <property name="text">
+             <string>[m]√N</string>
+            </property>
+           </row>
+           <row>
+            <property name="text">
+             <string>[m]L (trig)</string>
+            </property>
+           </row>
+           <column>
+            <property name="text">
+             <string>1-class</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>2-class</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>3-class</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>4-class</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>tec. leveling</string>
+            </property>
+           </column>
+           <item row="0" column="0">
+            <property name="text">
+             <string>0,0020</string>
+            </property>
+           </item>
+           <item row="0" column="1">
+            <property name="text">
+             <string>0,0040</string>
+            </property>
+           </item>
+           <item row="0" column="2">
+            <property name="text">
+             <string>0,0100</string>
+            </property>
+           </item>
+           <item row="0" column="3">
+            <property name="text">
+             <string>0,0200</string>
+            </property>
+           </item>
+           <item row="0" column="4">
+            <property name="text">
+             <string>0,0500</string>
+            </property>
+           </item>
+           <item row="1" column="0">
+            <property name="text">
+             <string>0,0005</string>
+            </property>
+           </item>
+           <item row="1" column="1">
+            <property name="text">
+             <string>0,0015</string>
+            </property>
+           </item>
+           <item row="1" column="2">
+            <property name="text">
+             <string>0,0036</string>
+            </property>
+           </item>
+           <item row="1" column="3">
+            <property name="text">
+             <string>0,0065</string>
+            </property>
+           </item>
+           <item row="1" column="4">
+            <property name="text">
+             <string>0,0100</string>
+            </property>
+           </item>
+           <item row="2" column="0">
+            <property name="text">
+             <string>0,1000</string>
+            </property>
+           </item>
+           <item row="2" column="1">
+            <property name="text">
+             <string>0,1000</string>
+            </property>
+           </item>
+           <item row="2" column="2">
+            <property name="text">
+             <string>0,1000</string>
+            </property>
+           </item>
+           <item row="2" column="3">
+            <property name="text">
+             <string>0,1000</string>
+            </property>
+           </item>
+           <item row="2" column="4">
+            <property name="text">
+             <string>0,4000</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+         <item>
+          <widget class="QFrame" name="frame_2">
+           <property name="frameShape">
+            <enum>QFrame::Box</enum>
+           </property>
+           <property name="frameShadow">
+            <enum>QFrame::Sunken</enum>
+           </property>
+           <layout class="QVBoxLayout" name="verticalLayout_5">
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout_5">
+              <item>
+               <widget class="QRadioButton" name="horizontalMSERadioButton">
+                <property name="text">
+                 <string>MSE of &amp;horizontal meas</string>
+                </property>
+                <property name="checked">
+                 <bool>true</bool>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QRadioButton" name="altitudeDisrepancyRadioButton">
+                <property name="text">
+                 <string>Adm. altitude &amp;discrepancy</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <spacer name="horizontalSpacer_5">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>40</width>
+                  <height>20</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+              <item>
+               <widget class="QPushButton" name="reportPushButton">
+                <property name="text">
+                 <string>&amp;Report</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+           </layout>
+          </widget>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_6">
+           <item>
+            <widget class="QPushButton" name="importPushButton">
+             <property name="text">
+              <string>&amp;Import</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="ExportPushButton">
+             <property name="text">
+              <string>&amp;Export</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <spacer name="horizontalSpacer_6">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>40</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <widget class="QCheckBox" name="applyNewProjectsCheckBox">
+           <property name="text">
+            <string>Apply to all &amp;new projects</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QWidget" name="correctionsTab">
+        <attribute name="title">
+         <string>Corrections</string>
+        </attribute>
+        <layout class="QVBoxLayout" name="verticalLayout_8">
+         <item>
+          <widget class="QGroupBox" name="correctionsGroupBox">
+           <property name="title">
+            <string>Corrections</string>
+           </property>
+           <property name="checkable">
+            <bool>false</bool>
+           </property>
+           <layout class="QVBoxLayout" name="verticalLayout_7">
+            <item>
+             <widget class="QCheckBox" name="atmosphericCheckBox">
+              <property name="text">
+               <string>&amp;Atmospheric</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QCheckBox" name="calibrationCheckBox">
+              <property name="text">
+               <string>&amp;Calibration</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QCheckBox" name="refractionCheckBox">
+              <property name="text">
+               <string>Earth c&amp;urvature and refraction</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QCheckBox" name="seaLevelReductionCheckBox">
+              <property name="text">
+               <string>Reduction to &amp;sea-level</string>
+              </property>
+              <property name="checked">
+               <bool>true</bool>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QCheckBox" name="ellipsoidReductionCheckBox">
+              <property name="text">
+               <string>Reduction to the e&amp;llipsoid</string>
+              </property>
+              <property name="checked">
+               <bool>true</bool>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QCheckBox" name="referenceSurfaceReductionCheckBox">
+              <property name="text">
+               <string>R&amp;eduction to the reference  surface</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QCheckBox" name="planeReductionCheckBox">
+              <property name="text">
+               <string>&amp;Reduction to the plane</string>
+              </property>
+              <property name="checked">
+               <bool>false</bool>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+         <item>
+          <layout class="QGridLayout" name="gridLayout">
+           <item row="0" column="0">
+            <widget class="QLabel" name="refractionCoeffitientLabel">
+             <property name="text">
+              <string>Refraction coeffitient:</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="1">
+            <widget class="QLineEdit" name="refractionCoeffitientLineEdit">
+             <property name="enabled">
+              <bool>false</bool>
+             </property>
+             <property name="text">
+              <string>0,1329</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="0">
+            <widget class="QLabel" name="referenceSurfaseElevationLabel">
+             <property name="text">
+              <string>Elevation of the reference surface:</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="1">
+            <widget class="QLineEdit" name="referenceSurfaseElevationLineEdit">
+             <property name="enabled">
+              <bool>false</bool>
+             </property>
+             <property name="text">
+              <string>0,000</string>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="0">
+            <widget class="QLabel" name="averageElevationLabel">
+             <property name="text">
+              <string>Average elevation of the project:</string>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="1">
+            <widget class="QLineEdit" name="averageElevationLineEdit">
+             <property name="text">
+              <string>0,000</string>
+             </property>
+            </widget>
+           </item>
+           <item row="3" column="0">
+            <widget class="QLabel" name="averageLatitudeLabel">
+             <property name="text">
+              <string>Average latitude of the project:</string>
+             </property>
+            </widget>
+           </item>
+           <item row="3" column="1">
+            <widget class="QLineEdit" name="averageLatitudeLineEdit">
+             <property name="text">
+              <string>60°00'00&quot;</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <spacer name="verticalSpacer_3">
+           <property name="orientation">
+            <enum>Qt::Vertical</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>20</width>
+             <height>156</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QWidget" name="toolsTab">
+        <attribute name="title">
+         <string>Tools</string>
+        </attribute>
+        <layout class="QHBoxLayout" name="horizontalLayout_13">
+         <item>
+          <widget class="QListWidget" name="toolsListWidget">
+           <property name="selectionRectVisible">
+            <bool>true</bool>
+           </property>
+           <property name="currentRow">
+            <number>-1</number>
+           </property>
+           <item>
+            <property name="text">
+             <string>default</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+         <item>
+          <layout class="QVBoxLayout" name="verticalLayout_10">
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_8">
+             <item>
+              <spacer name="horizontalSpacer_7">
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>40</width>
+                 <height>20</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+             <item>
+              <widget class="QToolButton" name="createToolButton">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="text">
+                <string>Cre&amp;ate</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_9">
+             <item>
+              <spacer name="horizontalSpacer_8">
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>40</width>
+                 <height>20</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+             <item>
+              <widget class="QToolButton" name="deleteToolButton">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="text">
+                <string>&amp;Delete</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_10">
+             <item>
+              <spacer name="horizontalSpacer_9">
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>40</width>
+                 <height>20</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+             <item>
+              <widget class="QToolButton" name="renameToolButton">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="text">
+                <string>&amp;Rename</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <spacer name="verticalSpacer_4">
+             <property name="orientation">
+              <enum>Qt::Vertical</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>20</width>
+               <height>3000</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item>
+            <layout class="QGridLayout" name="gridLayout_6">
+             <item row="0" column="0">
+              <widget class="QLabel" name="vertAngleFormulaLabel">
+               <property name="text">
+                <string>Formula for vertical angle:</string>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="0">
+              <widget class="QComboBox" name="vertAngleFormulaComboBox">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="currentIndex">
+                <number>3</number>
+               </property>
+               <item>
+                <property name="text">
+                 <string>L-M0           M0-R-180</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>M0-L-180    R-M0</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>M0-L           R-M0</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>L-M0           M0-R</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>M0-L           R-M0-180</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>L-M0-180    M0-R</string>
+                </property>
+               </item>
+              </widget>
+             </item>
+             <item row="1" column="1">
+              <spacer name="horizontalSpacer_11">
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>40</width>
+                 <height>20</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <widget class="QGroupBox" name="EDMIGroupBox">
+             <property name="title">
+              <string>EDMI</string>
+             </property>
+             <layout class="QGridLayout" name="gridLayout_4">
+              <item row="0" column="2">
+               <widget class="QLineEdit" name="edmiKLineEdit">
+                <property name="text">
+                 <string>0,000</string>
+                </property>
+               </widget>
+              </item>
+              <item row="0" column="5">
+               <widget class="QLineEdit" name="edmiCLineEdit">
+                <property name="text">
+                 <string>0,000</string>
+                </property>
+               </widget>
+              </item>
+              <item row="1" column="0">
+               <widget class="QLabel" name="edmiPpmLabel">
+                <property name="text">
+                 <string>ppm</string>
+                </property>
+               </widget>
+              </item>
+              <item row="1" column="2">
+               <widget class="QLineEdit" name="edmiPpmLineEdit">
+                <property name="text">
+                 <string>3,000</string>
+                </property>
+               </widget>
+              </item>
+              <item row="1" column="4">
+               <widget class="QLabel" name="edmiKaLabel">
+                <property name="text">
+                 <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:8pt;&quot;&gt;   K&lt;/span&gt;&lt;span style=&quot; font-size:12pt; vertical-align:sub;&quot;&gt;a&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                </property>
+               </widget>
+              </item>
+              <item row="1" column="5">
+               <widget class="QLineEdit" name="edmiKaLineEdit">
+                <property name="text">
+                 <string>278,96</string>
+                </property>
+               </widget>
+              </item>
+              <item row="0" column="4">
+               <widget class="QLabel" name="edmiCLabel">
+                <property name="text">
+                 <string>   c</string>
+                </property>
+               </widget>
+              </item>
+              <item row="0" column="0">
+               <widget class="QLabel" name="edmiKLabel">
+                <property name="text">
+                 <string>K</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+           <item>
+            <widget class="QGroupBox" name="stadiaGroupBox">
+             <property name="title">
+              <string>Stadia</string>
+             </property>
+             <layout class="QHBoxLayout" name="horizontalLayout_12">
+              <item>
+               <widget class="QLabel" name="stadiaKLabel">
+                <property name="text">
+                 <string>K</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QLineEdit" name="stadiaKLineEdit">
+                <property name="text">
+                 <string>100,000</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QLabel" name="stadiaCLabel">
+                <property name="text">
+                 <string>   c</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QLineEdit" name="stadiaCLineEdit">
+                <property name="text">
+                 <string>0,000</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+           <item>
+            <widget class="QGroupBox" name="tapeGroupBox">
+             <property name="title">
+              <string>Tape</string>
+             </property>
+             <layout class="QGridLayout" name="gridLayout_5">
+              <item row="0" column="2">
+               <widget class="QLineEdit" name="tapeKeLineEdit">
+                <property name="text">
+                 <string>0,0000125000</string>
+                </property>
+               </widget>
+              </item>
+              <item row="0" column="3">
+               <widget class="QLabel" name="tapeTLabel">
+                <property name="text">
+                 <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:8pt;&quot;&gt;   t&lt;/span&gt;&lt;span style=&quot; font-size:12pt; vertical-align:sub;&quot;&gt;o&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                </property>
+               </widget>
+              </item>
+              <item row="0" column="4">
+               <widget class="QLineEdit" name="tapeTLineEdit">
+                <property name="text">
+                 <string>20,000</string>
+                </property>
+               </widget>
+              </item>
+              <item row="1" column="2">
+               <widget class="QLineEdit" name="tapeKLineEdit">
+                <property name="text">
+                 <string>0,000</string>
+                </property>
+               </widget>
+              </item>
+              <item row="1" column="1">
+               <widget class="QLabel" name="tapeKLabel">
+                <property name="text">
+                 <string>k</string>
+                </property>
+               </widget>
+              </item>
+              <item row="0" column="1">
+               <widget class="QLabel" name="tapeKeLabel">
+                <property name="text">
+                 <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:8pt;&quot;&gt;K&lt;/span&gt;&lt;span style=&quot; font-size:12pt; vertical-align:sub;&quot;&gt;e&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_11">
+             <item>
+              <spacer name="horizontalSpacer_10">
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>40</width>
+                 <height>20</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+             <item>
+              <widget class="QLabel" name="rodHeightLabel">
+               <property name="text">
+                <string>Rod height:</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="rodHeightLineEdit">
+               <property name="text">
+                <string>3,000</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </widget>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <widget class="QDialogButtonBox" name="buttonBox">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="standardButtons">
+      <set>QDialogButtonBox::Apply|QDialogButtonBox::Cancel|QDialogButtonBox::Ok</set>
+     </property>
+    </widget>
+   </item>
+  </layout>
+  <action name="actionAddToolset">
+   <property name="text">
+    <string>add toolset</string>
+   </property>
+  </action>
+  <action name="actionInsertToolset">
+   <property name="text">
+    <string>insert toolset</string>
+   </property>
+  </action>
+  <action name="actionDeleteToolset">
+   <property name="text">
+    <string>delete toolset</string>
+   </property>
+  </action>
+  <action name="actionRenameToolset">
+   <property name="text">
+    <string>rename toolset</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="../res/toponic.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>accepted()</signal>
+   <receiver>ProjectPropertiesDialog</receiver>
+   <slot>accept()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>248</x>
+     <y>254</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>157</x>
+     <y>274</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>rejected()</signal>
+   <receiver>ProjectPropertiesDialog</receiver>
+   <slot>reject()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>316</x>
+     <y>260</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>286</x>
+     <y>274</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

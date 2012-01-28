@@ -1,0 +1,12 @@
+﻿/*! \page modules-toponic
+
+  <h1>Модули</h1>Полный список модулей.
+  <table border="0" cellspacing="3" cellpadding="3">
+  <tr><td class="indexkey"><a class="el" href="group__toponic.html">Toponic</a></td><td class="indexvalue">Модуль содержит классы, осуществляющие внутреннюю организацию приложения.</td></tr>
+  <tr><td class="indexkey"><a class="el" href="group__gui.html">GUI</a></td><td class="indexvalue">Модуль содержит GUI-классы, отвечающие за внешний вид приложения.</td></tr>
+  <tr><td class="indexkey"><a class="el" href="group__graphics.html">Graphics</a></td><td class="indexvalue">Модуль содержит классы, отвечающие за отбражение графической информации.</td></tr>
+  </table>
+
+  \note Разбиение на модули существует условно. Это сделано лишь для структурирования документации. Физически все исходные
+  файлы проекта находятся в <KBD>path/to/Toponic/src</KBD> и <KBD>path/to/Toponic/inc</KBD>
+*/
