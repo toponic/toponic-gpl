@@ -1,6 +1,6 @@
 /***************************************************************************
  *   Copyright (C) 2011 by Anton V. Skorev                                 *
- *   anton-skorev@yandex.ru                                                *
+ *   askorev@gmail.com                                                     *
  *                                                                         *
  *   This program is free software; you can redistribute it and/or modify  *
  *   it under the terms of the GNU General Public License as published by  *
@@ -62,7 +62,7 @@ protected:
 private:
     Ui::MainWindow *ui;
 
-    void notReleased(); //!< Заглушка для нереализованных функций.
+    void notRelized(); //!< Заглушка для нереализованных функций.
 };
 
 #endif // MAINWINDOW_H

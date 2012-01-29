@@ -18,8 +18,8 @@
  * <ul>
  *     <li><a href="http://qt.nokia.com/products/">Qt v 4.8.0 by Nokia Corporation</a></li> a cross-platform application and UI framework;
  *     <li><a href="http://qt.nokia.com/products/">Qt Creator 2.4.0 by Nokia Corporation</a> an open development platform;</li>
- *     <li><a href="http://www.gnu.org/software/gama/gama.html">GNU GaMa v 1.9.6</a></li> a project dedicated to adjustment of geodetic networks;
- *     <li><a href="http://expat.sourceforge.net/">Expat v 1.1</a> an XML parser library written in C (included in GNU Gama);</li>
+ *     <li><a href="http://www.gnu.org/software/gama/gama.html">GNU GaMa v 1.11</a></li> a project dedicated to adjustment of geodetic networks;
+ *     <li><a href="http://expat.sourceforge.net/">Expat v 1.1</a> an XML parser library written in C (included in GNU GaMa);</li>
  *     <li><a href="http://www.mingw.org/">MinGW v 5.1.4</a> a port of the GNU Compiler Collection (GCC), and GNU Binutils;</li>
  *     <li><a href="http://www.doxygen.org/">Doxygen v 1.7.5</a> a documentation system for C++, C, Java, Objective-C, Python, IDL (Corba and Microsoft flavors), Fortran, VHDL, PHP, C#, and to some extent D;</li>
  *     <li><a href="http://www.gimp.org/">GIMP v 2.6.7</a> the GNU Image Manipulation Program.</li>
@@ -27,7 +27,7 @@
  *
  * @section contacts Связь с разработчиками
  * По всем вопросам, идеям, предложениям и отчетам об ошибках обращайтесь
- * <a href="mailto:bug-toponic@yandex.ru">bug-toponic@yandex.ru</a>
+ * <a href="mailto:bug-toponic@gmail.com">bug-toponic@gmail.com</a>
  * При отправке отчета об ошибках, пожалуйста предоставляйте максимальное количество информации. Это поможет нам
  * понять, что конкретно произошло и воспроизвести ошибку на своих машинах. Помните, что излишек информации лучше
  * ее отсутсвия.
@@ -41,14 +41,20 @@
  */
 
  /*! \addtogroup toponic
- * Модуль содержит классы, осуществляющие внутреннюю организацию приложения.
+ * Группа классов, пространств имен и функций, осуществляющих внутреннюю организацию приложения.
+ * \note Разбиение на группы существует условно. Это сделано лишь для структурирования документации. Физически все исходные
+ * файлы проекта находятся в <KBD>path/to/toponic/src</KBD> и <KBD>path/to/toponic/inc</KBD>
  */
 
  /*! \addtogroup gui
- * Модуль содержит GUI-классы, отвечающие за внешний вид приложения.
+ * Группа GUI-классов, отвечающих за внешний вид приложения.
+ * \note Разбиение на группы существует условно. Это сделано лишь для структурирования документации. Физически все исходные
+ * файлы проекта находятся в <KBD>path/to/toponic/src</KBD> и <KBD>path/to/toponic/inc</KBD>
  */
 
  /*! \addtogroup graphics
- * Модуль содержит классы, отвечающие за отбражение графической информации.
+ * Группа классов, отвечающих за отбражение графической информации.
  * Так же сюда входят классы для импорта\экспорта файлов различных растровых и векторных форматов.
+ * \note Разбиение на группы существует условно. Это сделано лишь для структурирования документации. Физически все исходные
+ * файлы проекта находятся в <KBD>path/to/toponic/src</KBD> и <KBD>path/to/toponic/inc</KBD>
  */

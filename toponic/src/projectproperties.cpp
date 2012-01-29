@@ -1,6 +1,6 @@
 /***************************************************************************
  *   Copyright (C) 2011 by Anton V. Skorev                                 *
- *   anton-skorev@yandex.ru                                                *
+ *   askorev@gmail.com                                                     *
  *                                                                         *
  *   This program is free software; you can redistribute it and/or modify  *
  *   it under the terms of the GNU General Public License as published by  *
@@ -23,4 +23,51 @@
 ProjectProperties::ProjectProperties(QObject *parent) :
     QObject(parent)
 {
+    m_angles = toponic::right_handed;
+    m_axesXY = toponic::ne;
+    m_description = "";
+    m_sigmaApr = 10.0;
+    m_confPr = 0.95;
+    m_tolAbs = 1000;
+    m_sigmaAct = toponic::aposteriori;
+    m_updateConstrainedCoordinates = false;
+}
+
+void ProjectProperties::setAngles(const toponic::Angles newAngles)
+{
+    if (newAngles != m_angles)
+    {
+        m_angles = newAngles;
+    }
+}
+
+void ProjectProperties::setAxesXY(const toponic::AxesXY newAxesXY)
+{
+    if (newAxesXY != m_axesXY)
+    {
+        m_axesXY = newAxesXY;
+    }
+}
+
+void ProjectProperties::setDescription(const QString newDescription)
+{
+    if (newDescription != m_description)
+    {
+        m_description = newDescription;
+    }
+}
+
+toponic::Angles ProjectProperties::angles() const
+{
+    return m_angles;
+}
+
+toponic::AxesXY ProjectProperties::axesXY() const
+{
+    return m_axesXY;
+}
+
+QString ProjectProperties::description() const
+{
+    return m_description;
 }

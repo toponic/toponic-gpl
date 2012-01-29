@@ -1,6 +1,6 @@
 /***************************************************************************
  *   Copyright (C) 2011 by Anton V. Skorev                                 *
- *   anton-skorev@yandex.ru                                                *
+ *   askorev@gmail.com                                                     *
  *                                                                         *
  *   This program is free software; you can redistribute it and/or modify  *
  *   it under the terms of the GNU General Public License as published by  *
@@ -48,11 +48,11 @@ void MainWindow::changeEvent(QEvent *e)
     }
 }
 
-void MainWindow::notReleased()
+void MainWindow::notRelized()
 {
     QMessageBox msgBox;
     QPixmap pix;
-    msgBox.setText(tr("It is not released in this version."));
+    msgBox.setText(tr("It is not realized in this version."));
     pix.load(":png/information_32x32.png");
     msgBox.setIconPixmap(pix);
     msgBox.setParent(this);
@@ -64,47 +64,47 @@ void MainWindow::notReleased()
 void MainWindow::slotFileNew()
 {
     qDebug("MainWindow::slotFileNew() called.");
-    notReleased();
+    notRelized();
 }
 
 void MainWindow::slotFileOpen()
 {
     qDebug("MainWindow::slotFileOpen() called.");
-    notReleased();
+    notRelized();
 }
 
 void MainWindow::slotFileClose()
 {
     qDebug("MainWindow::slotFileClose() called.");
-    notReleased();
+    notRelized();
 }
 
 void MainWindow::slotFileSave()
 {
     qDebug("MainWindow::slotFileSave() called.");
-    notReleased();
+    notRelized();
 }
 
 void MainWindow::slotFileSaveAs()
 {
     qDebug("MainWindow::slotFileSaveAs() called.");
-    notReleased();
+    notRelized();
 }
 
 void MainWindow::slotFileSaveAll()
 {
     qDebug("MainWindow::slotFileSaveAll() called.");
-    notReleased();
+    notRelized();
 }
 
 void MainWindow::slotImportFromFile()
 {
     qDebug("MainWindow::slotImportFromFile() called.");
-    notReleased();
+    notRelized();
 }
 
 void MainWindow::slotImportTemplatePoints()
 {
     qDebug("MainWindow::slotImportTemplatePoints() called.");
-    notReleased();
+    notRelized();
 }
