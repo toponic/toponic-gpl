@@ -31,13 +31,6 @@
  */
 namespace toponic
 {
-    //! Направление измерения углов.
-    enum Angles
-    {
-        right_handed, //!< измерение углов против часовой стрелки;
-        left_handed  //!< измерение углов по часовой стрелки.
-    };
-
     //! Ориентация осей X и Y.
     /*!
      *  Значение <I>ne</I> означает, что ось X ориентирована на север, а ось Y - на восток.
@@ -57,10 +50,34 @@ namespace toponic
         ws  //!< направление осей: X на запад,  Y на юг.
     };
 
+    //! Направление измерения углов.
+    enum Angles
+    {
+        right_handed, //!< измерение углов против часовой стрелки;
+        left_handed   //!< измерение углов по часовой стрелки.
+    };
+
+    //! Тип эталонного среднеквадратического отклонения, используемого в статистических тестах.
     enum SigmaActual
     {
         aposteriori,
         apriori
+    };
+
+    //! Алгоритм уравнивания сети.
+    enum Algorithm
+    {
+        svd,      //!< Singular Value Decomposition.
+        gso,      //!< Gram-Schmidt Orthogonalization.
+        cholesky, //!< Cholesky decomposition of semidefinite matrix of normal equations.
+        envelope  //!< Cholesky decomposition with envelope reduction of the sparse matrix.
+    };
+
+    //! Единицы измерения углов.
+    enum AngularUnits
+    {
+        gons    = 400, //!< Гоны.
+        degrees = 360  //!< Градусы.
     };
 
     //! Расширение файла для экспорта проекта.

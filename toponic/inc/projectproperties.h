@@ -24,6 +24,7 @@
 #include <QObject>
 
 #include "toponic.h"
+#include "ellipsoid.h"
 
 //! Свойства проекта.
 /*!
@@ -76,29 +77,46 @@ signals:
 public slots:
 
 private:
-    //! Направление измерения углов.
-    toponic::Angles m_angles;
-    //! Ориентация осей.
-    toponic::AxesXY m_axesXY;
-    //! Описание сети.
-    QString m_description;
+    //! Идентифицирует конфигурацию сети в базе данных.
+    int m_confId;
+    //! Идентификатор конфигурации сети.
+    /*! Выдержка из документации GaMa:
+     *  Field conf_name is used to identify configuration outside the database
+     *  (e.g. parameter in command-line when reading data from database to gama-local).
+     *  Не должно превышать 60 символов.
+     *  @todo Перевести описание в документации. */
+    QString m_confName;
     //! Значение априорного среднеквадратичного отклонения поправок.
     /*! @todo Убедиться в правильности перевода описания. */
-    float m_sigmaApr;
-    //! Доварительная вероятность (confidence probability).
-    float m_confPr;
-    //! tolerance for identification of gross absolute terms in project equations.
+    double m_sigmaApr;
+    //! Доварительный интервал (confidence probability).
+    double m_confPr;
+    //! tolerance for identification of gross absolute terms in project equations (default value 1000 mm).
     /*! @todo Перевести описание в документации. */
     unsigned short m_tolAbs;
     //! actual type of reference standard deviation use in statistical tests.
     /*! @todo Перевести описание в документации. */
     toponic::SigmaActual m_sigmaAct;
-    //! enables user to control if coordinates of constrained points are updated in iterative adjustment.
-    /*! If test on linerarization fails, GaMa tries to improve approximate coordinates
-     *  of adjusted points and repeats the whole adjustment. Coordinates of constrained
-     *  points are implicitly not changed during iterations.
-     *  @todo Перевести описание в документации. */
-    bool m_updateConstrainedCoordinates;
+    //! Определяет, будут ли предварительные координаты пунктов обновлены в итерационном уравнивании.
+    bool m_updateConstrainedCoodrinates;
+    //! Ориентация осей.
+    toponic::AxesXY m_axesXY;
+    //! Направление измерения углов.
+    toponic::Angles m_angles;
+    //! measurement epoch. It is floating point number (default value is 0.0).
+    /*! @todo Перевести описание в документации.
+     *  @todo Что это вообще означает? */
+    double m_epoch;
+    //! Алгоритм уравнивания сети.
+    toponic::Algorithm m_algorithm;
+    //! Единицы измерения углов (в XML файле результатов уравнивания).
+    toponic::AngularUnits m_angUnits;
+    //! Средняя широта района уравниваемой сети (в гонах).
+    double m_latitude;
+    //! Эллипсоид проекта.
+    Ellipsoid *m_ellipsoid;
+    //! Описание сети.
+    QString m_description;
 };
 
 #endif // PROJECTPROPERTIES_H

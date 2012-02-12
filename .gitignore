@@ -13,6 +13,7 @@
 /gama/configure.ac
 /gama/Makefile.am
 /gama/gama.dox
+/gama/config.h
 /gama/config.h.in
 /gama/Makefile.in
 /gama/config.h.linux

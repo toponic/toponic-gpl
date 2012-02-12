@@ -7,7 +7,7 @@ win32 {
 }
 
 CONFIG -= qt
-CONFIG += debug_and_release
+CONFIG += debug_and_release console
 
 CONFIG (debug, debug|release) {
     OBJECTS_DIR = ../../../tmp/debug/gama/obj
