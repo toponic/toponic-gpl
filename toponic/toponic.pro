@@ -3,7 +3,8 @@ CONFIG += debug_and_release
 TARGET = toponic
 VERSION = 0.0.1
 QT += core \
-    gui
+    gui\
+    xml
 
 # ----------------------------------------------------
 INCLUDEPATH += inc \
@@ -21,7 +22,9 @@ HEADERS += \
     inc/toponic.h \
     inc/initellipsoids.h \
     inc/ellipsoids.h \
-    inc/ellipsoid.h
+    inc/ellipsoid.h \
+    inc/dommodel.h \
+    inc/domitem.h
 
 # ----------------------------------------------------
 SOURCES += \
@@ -34,7 +37,9 @@ SOURCES += \
     src/coordinatesystems.cpp \
     src/coordinatesystem.cpp \
     src/ellipsoids.cpp \
-    src/ellipsoid.cpp
+    src/ellipsoid.cpp \
+    src/dommodel.cpp \
+    src/domitem.cpp
 
 # ----------------------------------------------------
 TRANSLATIONS = \

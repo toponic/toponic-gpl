@@ -23,6 +23,9 @@
 
 #include <QObject>
 
+class QDomDocument;
+class QStandardItemModel;
+
 //! Проект Toponic.
 /*!
  *
@@ -33,11 +36,20 @@ class Project : public QObject
 {
     Q_OBJECT
 public:
-    explicit Project(QObject *parent = 0, QString fileName = "");
+    explicit Project(QObject *parent = 0);
+    ~Project();
 
+    //! Функция чтения данных из файла проекта.
+    bool readFromFile(const QString fileName);
+    //! Функция записи данных из файл проекта.
+    bool writeToFile(const QString fileName);
 signals:
 
 public slots:
+
+private:
+    QDomDocument *m_projectDOM;
+    QStandardItemModel *m_projectModel;
 
 };
 

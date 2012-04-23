@@ -22,10 +22,12 @@
 #define APPLICATION_H
 
 #include <QObject>
+#include <QHash>
 
 class MainWindow;
 class CoordinateSystems;
 class Ellipsoids;
+class Project;
 
 //! Класс приложения Toponic.
 /*!
@@ -67,10 +69,8 @@ public:
     CoordinateSystems *coordinateSystems() const;
     //! Функция доступа к хранилищу эллипсоидов приложения.
     Ellipsoids* ellipsoids() const;
-//    //! Функция доступа к хранилищу проектов, открытых в текущей сессии приложения.
-//    Projects* projects() const;
-//    //! Функция доступа к активному проекту.
-//    Project* activeProject() const;
+    //! Функция доступа к активному проекту.
+    Project* activeProject() const;
 
 signals:
 
@@ -93,10 +93,14 @@ private:
     CoordinateSystems *m_coordinateSystems;
     //! Указатель на хранилище эллипсоидов приложения.
     Ellipsoids *m_ellipsoids;
-//    //! Указатель на хранилище проектов, открытых в текущей сессии приложения.
-//    Projects *m_projects;
-//    //! Указатель на активный проект.
-//    Project *m_activeProject;
+    //! Хранилище проектов, открытых в текущей сессии приложения.
+    /*!
+     *  Ключ - имя файла проекта. Если проект только создан и еще не сохранен на диск,
+     *  то ключ будет иметь вид "newProject-n", где n - какой-то номер.
+     */
+    QHash <QString, Project *> *m_projects;
+    //! Указатель на активный проект.
+    Project *m_activeProject;
 };
 
 static Application* application = Application::instance();

@@ -18,9 +18,38 @@
  *   59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.             *
  ***************************************************************************/
 
+#include <QtDebug>
+
+#include <QDomDocument>
+#include <QStandardItemModel>
+#include <QFile>
+
 #include "project.h"
 
-Project::Project(QObject *parent, QString fileName) :
+Project::Project(QObject *parent) :
     QObject(parent)
 {
+    m_projectDOM = new QDomDocument();
+}
+
+Project::~Project()
+{
+    delete m_projectDOM;
+}
+
+bool Project::readFromFile(const QString fileName)
+{
+    qDebug("Project::readFromFile(const QString fileName) called.");
+
+    QFile file(fileName);
+    if (!file.open(QIODevice::ReadOnly))
+        return false;
+    if (!m_projectDOM->setContent(&file)) {
+        file.close();
+        return false;
+    }
+    file.close();
+
+    qDebug() << m_projectDOM->doctype().name();
+    return true;
 }

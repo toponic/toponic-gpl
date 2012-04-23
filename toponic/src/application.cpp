@@ -18,10 +18,13 @@
  *   59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.             *
  ***************************************************************************/
 
+#include <QHash>
+
 #include "application.h"
 #include "mainwindow.h"
 #include "coordinatesystems.h"
 #include "ellipsoids.h"
+#include "project.h"
 
 
 Application* Application::m_applicationInstance = 0;
@@ -81,13 +84,8 @@ Ellipsoids* Application::ellipsoids() const
     return m_ellipsoids;
 }
 
-//Projects* Application::projects() const
-//{
-//    return m_projects;
-//}
-
-//Project* Application::activeProject() const
-//{
-//    return m_activeProject;
-//}
+Project* Application::activeProject() const
+{
+    return m_activeProject;
+}
 

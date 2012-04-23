@@ -98,7 +98,7 @@ private:
     /*! @todo Перевести описание в документации. */
     toponic::SigmaActual m_sigmaAct;
     //! Определяет, будут ли предварительные координаты пунктов обновлены в итерационном уравнивании.
-    bool m_updateConstrainedCoodrinates;
+    bool m_updateConstrainedCoordinates;
     //! Ориентация осей.
     toponic::AxesXY m_axesXY;
     //! Направление измерения углов.

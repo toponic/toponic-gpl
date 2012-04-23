@@ -19,9 +19,12 @@
  ***************************************************************************/
 
 #include <QMessageBox>
+#include <QFileDialog>
 
+#include "application.h"
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
+#include "project.h"
 
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
@@ -70,7 +73,22 @@ void MainWindow::slotFileNew()
 void MainWindow::slotFileOpen()
 {
     qDebug("MainWindow::slotFileOpen() called.");
-    notRelized();
+    QString fileName;
+    QFileDialog dialog(this);
+
+    dialog.setFileMode(QFileDialog::ExistingFile);
+    dialog.setViewMode(QFileDialog::Detail);
+    fileName = QFileDialog::getOpenFileName(this,
+         tr("Open Toponic project"),
+         "",
+         tr("Toponic project files (*.tprj);;XML files (*.xml);;Any files (*.*)"));
+
+    if (!fileName.isNull()) {
+        Project *newProject = new Project(application);
+        if ( newProject->readFromFile(fileName) ) {
+            //application->addProject(newProject);
+        }
+    }
 }
 
 void MainWindow::slotFileClose()
