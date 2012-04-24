@@ -35,3 +35,4 @@
 /gama/xml
 /toponic/doc/html/*
 !/toponic/doc/html/png
+/.tmp
